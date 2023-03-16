@@ -182,6 +182,7 @@ img{
     padding: 2rem 0 4rem;
     margin: auto;
     min-height: 80vh;
+   
 }
 
 .section__title{
@@ -199,6 +200,16 @@ img{
 .section__title, 
 .section__subtitle{
     text-align: center;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 /* ========================= BUTTONS STYLING =====================  */
 .button{
@@ -388,6 +399,7 @@ img{
     margin-top: var(--mb-3);
     padding-bottom: 0;
     margin-bottom: var(--mb-2);
+   
 }
 
 .home__container{
@@ -543,6 +555,7 @@ img{
 .about{
     padding-top: 1rem;
     margin-top: 7rem;
+    animation: fadeIn 1s ease-in both;
 }
 .about__img{
     width: 400px;
